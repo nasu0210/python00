@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>사용자 목록</h2>
+<table border="1" cellpadding="5">
+    <tr>
+        <th>ID</th>
+        <th>Email</th>
+        <th>Username</th>
+        <th>Created</th>
+    </tr>
+    {% for u in users %}
+    <tr>
+        <td>{{ u[0] }}</td>
+        <td>{{ u[1] }}</td>
+        <td>{{ u[2] }}</td>
+        <td>{{ u[3] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="/register">← 돌아가기</a>
+
+{% endblock %}
