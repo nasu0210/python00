@@ -1,0 +1,8 @@
+project/
+ ├─ app.py
+ ├─ dao.py
+ ├─ app.db
+ └─ templates/
+     ├─ base.html
+     ├─ register.html
+     └─ users.html
